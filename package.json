@@ -1,0 +1,11 @@
+{
+  "name": "maths-game",
+  "version": "0.0.1",
+  "description": "A fun maths game.",
+  "main": "server.js",
+  "repository": "",
+  "author": "Lisa",
+  "dependencies": {
+    "express": "^4.11.2"
+  }
+}
