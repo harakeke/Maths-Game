@@ -1,2 +1,45 @@
 Nodejs install
 Install expressjs
+Create package.json with the following text 
+
+{
+  "name": "maths-game",
+  "version": "0.0.1",
+  "description": "A fun maths game.",
+  "main": "server.js",
+  "repository": "",
+  "author": "Lisa",
+  "dependencies": {
+    "express": "^4.11.2"
+  }
+}
+
+Run: 
+
+npm install
+
+To install the dependencies
+The dependencies should be downloaded into the node_modules folder
+
+Create server.js file with the following content
+
+
+var express = require('express')
+var app = express()
+
+app.get('/', function (req, res) {
+ res.send('Hello world')
+})
+
+app.get('/lisa', function (req, res) {
+ res.send('Waaa haaa ha')
+})
+
+var server = app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
+ var addr = server.address();
+ console.log("Chat server listening at", addr.address + ":" + addr.port);
+});
+
+Click plus tab in console. Choose New Run Configuration. Runner is set to auto and should work otherwise change to node.js
+Click run button. The url should show up in the console. Copy and paste the url in a new tab in browser. Hello world should show up.
+Try adding /lisa at the end. What message do you see on the screen. Try modifying the messgae and adding your own.
