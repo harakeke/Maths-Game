@@ -1,0 +1,7 @@
+Install a module that serves static files. Static files are usualluy .html .css .js files and images. 
+Expressjs already comes with a module for doing this.
+We need to create a folder for storing our file in. Let's call this one public. In the public folder we also create sub folders for "css", "image" and "js".
+We also want to put an index.html file in the public folder. This is the file that will be served we a browser is requesting "/".
+
+
+
