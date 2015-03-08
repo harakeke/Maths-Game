@@ -1,6 +1,4 @@
-﻿/// <reference path="typings/angularjs/angular.d.ts" />
-/// <reference path="reference.ts" />
-module Maths {
+﻿module Maths {
   export class MainController {
     public label: string;
 

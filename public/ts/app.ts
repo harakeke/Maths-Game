@@ -1,5 +1,4 @@
-﻿/// <reference path="reference.ts" />
-var MathsApp : any = MathsApp || {};
+﻿var MathsApp : any = MathsApp || {};
 
 MathsApp = (function () {
   var init = () => {
